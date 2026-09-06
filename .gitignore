@@ -1,0 +1,8 @@
+venv_kraken/
+__pycache__/
+*.pyc
+venv_kraken/
+
+# Fichiers locaux volumineux / environnement Python
+images_extracted/
+venv_kraken/

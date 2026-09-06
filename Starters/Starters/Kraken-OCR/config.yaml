@@ -1,0 +1,30 @@
+general:
+  repo_root: "C:/Users/Administrateur/Desktop/zindi"
+
+training:
+  train_csv: "C:/Users/Administrateur/Desktop/zindi/Train.csv"
+  base_image_dir: "C:/Users/Administrateur/Desktop/zindi/images_extracted/images"
+  output: "C:/Users/Administrateur/Desktop/zindi/Starters/Starters/Kraken-OCR/kraken_model"
+  load_model: "C:/Users/Administrateur/Desktop/zindi/Starters/Starters/Kraken-OCR/kraken_model_3.mlmodel"
+  load_hyper_parameters: false
+  append: null
+  resize: null
+  train_data_dir: "C:/Users/Administrateur/Desktop/zindi/Starters/Starters/Kraken-OCR/kraken_train_data"
+  log_dir: "C:/Users/Administrateur/Desktop/zindi/Starters/Starters/Kraken-OCR/training_logs"
+  batch_size: 16
+  epochs: 30
+  partition: 0.9
+  format_type: "path"
+  force_binarization: false
+
+inference:
+  model_path: "C:/Users/Administrateur/Desktop/zindi/Starters/Starters/Kraken-OCR/kraken_model_3.mlmodel"
+  test_csv: "C:/Users/Administrateur/Desktop/zindi/Test.csv"
+  base_image_dir: "C:/Users/Administrateur/Desktop/zindi/images_extracted/images"
+  output_csv: "C:/Users/Administrateur/Desktop/zindi/submission.csv"
+  device: "cpu"
+  use_gpu: false
+  pad: 16
+  threshold: null
+  text_direction: "horizontal-lr"
+  bidi_reordering: true
